@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int a=4;
+         float b=5.678f;
+        
+        System.out.println(a);
+        System.out.println(b=5.68f);
+    }
+}
