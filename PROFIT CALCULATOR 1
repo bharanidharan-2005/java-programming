@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+
+        
+      int copiesSold = sc.nextInt();
+        int sellingPrice = sc.nextInt();
+        int costPrice = sc.nextInt();
+
+        
+        int grossProfit = (sellingPrice - costPrice) * copiesSold;
+
+        
+        double netProfit = grossProfit -100;
+
+        
+        System.out.println("Number of copies sold:" + copiesSold);
+        System.out.println("Cost of each copy:" + sellingPrice);
+        System.out.println("Cost spent by agency on each newspaper:" + costPrice);
+        System.out.printf("The profit obtained is Rs.%.2f\n", netProfit);
+
+    }
+}
