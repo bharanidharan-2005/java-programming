@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        
+        double base = sc.nextDouble();
+        double height = sc.nextDouble();
+        
+        
+        double side1 = sc.nextDouble();
+        double side2 = sc.nextDouble();
+        double side3 = sc.nextDouble();
+
+        
+        double area = (base * height) / 2;
+
+        
+        double perimeter = side1 + side2 + side3;
+
+        
+        DecimalFormat df = new DecimalFormat("0.00");
+
+        System.out.println("Area of Triangle is " + df.format(area));
+        System.out.println("Perimeter of Triangle is " + df.format(perimeter));
+    
+    }
+}
