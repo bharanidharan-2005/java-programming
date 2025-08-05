@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     
+        Scanner sc = new Scanner(System.in);
+
+    
+        int number = sc.nextInt();
+
+        
+        int tens = number / 10; 
+        int ones = number % 10; 
+
+    
+        int sum = tens + ones;
+
+        
+        System.out.println("Bird said:" + number);
+        System.out.println("Alice must go in path-" + sum);
+    }
+}
+
+        
+    
