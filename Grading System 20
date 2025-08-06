@@ -1,0 +1,51 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+       
+        String name = sc.nextLine();
+
+        
+        int m1 = sc.nextInt();
+        int m2 = sc.nextInt();
+        int m3 = sc.nextInt();
+        int m4 = sc.nextInt();
+        int m5 = sc.nextInt();
+        
+        
+        
+        int totalMarks = m1 + m2 + m3 + m4+m5;
+        double averageMarks = totalMarks / 5.0;
+
+        String grade;
+        if (averageMarks == 100) {
+            grade = "S";
+        } else if (averageMarks >= 90) {
+            grade = "A";
+        } else if (averageMarks >= 80) {
+            grade = "B";
+        } else if (averageMarks >= 70) {
+            grade = "C";
+        } else if (averageMarks >= 60) {
+            grade = "D";
+        } else if (averageMarks >= 50) {
+            grade = "E";
+        } else {
+            grade = "Fail";
+        }
+
+        
+        System.out.println("Name of the Student:" + name);
+        System.out.println("Total Mark:" + totalMarks);
+        System.out.println("Average Mark:" + String.format("%.1f", averageMarks));
+        System.out.println("Grade Mark:" + grade);
+
+    }
+}
