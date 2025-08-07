@@ -7,24 +7,25 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        int temp;
-        temp=a;
-        int sum=0;
-        
-        while(temp>0){
-            sum+=temp%10;
-            temp=temp/10;
+       
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+       
+        int original = a;
+        int sum = 0;
+
+        while (a > 0) {
+            sum += a % 10;
+            a = a / 10;
         }
-        if(a%sum==0){
-        System.out.println("Harshad Number");
-            }else{
+
+        if (original % sum == 0) {
+            System.out.println("Harshad Number");
+        } else {
             System.out.println("Not Harshad Number");
         }
-        
-       
-        
-             
     }
 }
+
+    
