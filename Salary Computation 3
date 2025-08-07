@@ -5,7 +5,8 @@ public class GrossSalary {
         Scanner sc = new Scanner(System.in);
 
         int basic = sc.nextInt();
-        int hra, da;
+        int hra; 
+        int da;
 
         if (basic < 15000) {
             hra = (15 * basic) / 100;
