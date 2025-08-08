@@ -12,7 +12,7 @@ public class DigitSum {
 
             
             while (num > 0) {
-                sum += number % 10;
+                sum += num % 10;
                 num /= 10;
             }
 
