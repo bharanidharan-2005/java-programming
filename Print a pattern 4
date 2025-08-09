@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+
+        if (n >= 0 && n <= 9) {
+            char ch = 'A';
+
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(ch);
+                    if (j < i) {
+                        System.out.print(" ");
+                    }
+                    ch++;
+                }
+                System.out.println(); 
+            }
+        } else {
+            System.out.println("Invalid Input");
+        }
+    }
+}
+
