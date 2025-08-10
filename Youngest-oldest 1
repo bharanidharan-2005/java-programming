@@ -1,0 +1,48 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+         if (n <= 0) {
+            System.out.println("Invalid Input");
+        } else {
+            int[] ages = new int[n];
+            int invalidCount = 0;
+
+            for (int i = 0; i < n; i++) {
+                ages[i] = sc.nextInt();
+                if (ages[i] < 0) {
+                    invalidCount++;
+                }
+            }
+
+            if (invalidCount > 0) {
+                System.out.println("Invalid Input");
+            } else {
+                int youngest = ages[0];
+                int oldest = ages[0];
+
+                for (int j = 1; j < n; j++) {
+                    if (ages[j] < youngest) {
+                        youngest = ages[j];
+                    }
+                    if (ages[j] > oldest) {
+                        oldest = ages[j];
+                    }
+                }
+
+                System.out.println("Youngest=" + youngest);
+                System.out.println("Oldest=" + oldest);
+            }
+        }
+
+       
+    }
+}
+    
