@@ -5,24 +5,21 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
        
         int n = sc.nextInt();
         int[] doors = new int[n];
         int i,j;
-        for ( i = 0; i < n; i++) doors[i] = sc.nextInt();
+        for ( i = 0; i < n; i++) 
+         doors[i] = sc.nextInt();
         int k = sc.nextInt();
-
-        
         for ( j = 0; j < n; j++) {
             if (doors[j] == k) {
                 System.out.printf("Door Number is %03d-DN\n", j);
                 break;
             }
         }
-
         if (j == n)
             System.out.println("-1");
         
