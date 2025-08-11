@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt(),temp;
+        int[] a = new int[n];
+        for (int i=0;i<n;i++) {
+            a[i]=sc.nextInt();
+        }
+        int k=sc.nextInt();
+        for (int i=0;i<n-1;i++) {
+            for (int j = i + 1; j < n; j++) {
+            if (a[i] > a[j]) {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;}
+            }
+        }
+        System.out.print("The elements are in the order: ");
+        
+        for (int i=0;i<n;i++) {
+            System.out.print(a[i] + " ");
+        }
+        System.out.println();
+         System.out.print("The Kth value is " + k +" and Largest elements are ");
+        for (int i=n-1;i>=n-k;i--) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
