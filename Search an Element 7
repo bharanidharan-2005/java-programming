@@ -3,31 +3,24 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-
 public class Solution {
-
-    public static void main(String[] args) {
+       public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size= sc.nextInt();
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
         }
-
-      
-        int b= sc.nextInt();
-
-        int target = 0;
-
-        for (int i = 0; i < size; i++) {
+       int b= sc.nextInt();
+       int target = 0;
+       for (int i = 0; i < size; i++) {
             if (arr[i] == b) {
                 System.out.println( b +" is presented in an array." );
                 target = 1;
                 break;
             }
         }
-
-        if (target == 0) {
+      if (target == 0) {
             System.out.println(b +" is not presented in an array.");
         }
 
