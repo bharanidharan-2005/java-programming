@@ -3,28 +3,18 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-
 public class Solution {
-
-    public static void main(String[] args) {
-      
-        Scanner sc = new Scanner(System.in);
-
-     
-        int balance = sc.nextInt();
-
-        
-        int process = sc.nextInt();
-
-        
-        switch (process) {
+      public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+       int balance = sc.nextInt();
+       int process = sc.nextInt();
+    switch (process) {
             case 1:  
                 int da = sc.nextInt(); 
                 balance += da;  
                 System.out.println(balance);  
                 break;
-
-            case 2: 
+           case 2: 
                 int wa = sc.nextInt();  
                 if (wa > balance) {
                     System.out.println("Insufficient Balance"); 
@@ -33,14 +23,11 @@ public class Solution {
                     System.out.println(balance);  
                 }
                 break;
-
             default:  
                 System.out.println("Invalid Input");
                 break;
         }
-
-      
-}
+    }
 }
 
     
